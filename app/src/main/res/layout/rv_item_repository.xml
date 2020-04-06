@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/dot_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/dog_pic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dog_1"/>
+
+        <TextView
+            android:id="@+id/species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지 종"
+            app:layout_constraintTop_toBottomOf="@id/dog_pic"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/age1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이 : "
+            app:layout_constraintTop_toBottomOf="@id/species"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/age2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3살 추정"
+            app:layout_constraintTop_toBottomOf="@id/species"
+            app:layout_constraintLeft_toRightOf="@id/age1"
+            android:layout_marginTop="10dp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/feature1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="특징 : "
+            app:layout_constraintTop_toBottomOf="@id/age1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/feature2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="건강함"
+            app:layout_constraintTop_toBottomOf="@id/age2"
+            app:layout_constraintLeft_toRightOf="@id/feature1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/place1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보호장소 : "
+            app:layout_constraintTop_toBottomOf="@id/feature1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="#282828"/>
+
+        <TextView
+            android:id="@+id/place2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="서울시"
+            app:layout_constraintTop_toBottomOf="@id/feature2"
+            app:layout_constraintLeft_toRightOf="@id/place1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="#282828"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
